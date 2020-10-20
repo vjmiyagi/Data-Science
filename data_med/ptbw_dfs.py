@@ -80,6 +80,7 @@ class Flavor(DB.Model):
     def __repr__(self):
         return "<Flavor %r" % self.flavor
 
+
 class StrainFlavor(DB.Model):
     sf_id = DB.Column(DB.Integer, primary_key=True)
     strain_id = DB.Column(DB.Integer, DB.ForeignKey("strain.strain_id"))
