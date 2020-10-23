@@ -15,7 +15,8 @@ if ENV == 'dev':
     app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:1386waxedoff@localhost/med'
 else:
     app.debug = False
-    URI = 'postgres://yzxuznljhlgasw:90cac3d33dfb80980bd491c60785a3b25d88f32612ede4d85197301b5d8666ae@ec2-52-86-116-94.compute-1.amazonaws.com:5432/d3fk1bdb22ha2a'
+    # POPULATE URI BEFORE RUNNING
+    URI = ''
     app.config['SQLALCHEMY_DATABASE_URI'] = URI
 
 
